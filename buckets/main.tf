@@ -5,7 +5,6 @@ variable "costcenter" {}
 variable "customerid" {}
 variable "appfamily" {}
 variable "platform" {}
-variable "customerid" {}
 variable "owner" {}
 variable "aws_region" {}
 variable "kms_key_id" {}
