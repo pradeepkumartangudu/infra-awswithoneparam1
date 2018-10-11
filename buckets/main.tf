@@ -9,6 +9,7 @@ variable "platform" {}
 variable "owner" {}
 variable "aws_region" {}
 variable "kms_key_id" {}
+variable "appid" {}
 resource "aws_s3_bucket" "generic" {
   bucket = "${var.name}"
   acl    = "private"
@@ -21,8 +22,6 @@ resource "aws_s3_bucket" "generic" {
     owner       = "${var.owner}"
     customerid  = "${var.customerid}"
     appid       = "${var.appid}"
-    partnerid   = "${var.partnerid}"
-    compliance  = "${var.compliance}"
     terraform   = "True"
   }
 }
