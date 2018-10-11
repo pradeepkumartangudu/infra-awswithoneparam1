@@ -1,5 +1,5 @@
 variable "bucketname" {}
-module "bucket2" {
-  source      = "../buckets"
+module "bucket" {
+  source      = "./buckets"
   name        = "mysoft-${var.bucketname}-us-east-1"
 }
