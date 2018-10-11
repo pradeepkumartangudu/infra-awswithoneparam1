@@ -2,7 +2,6 @@ variable "name" {}
 variable "environment" {}
 variable "foundation" {}
 variable "costcenter" {}
-variable "customerid" {}
 variable "appfamily" {}
 variable "platform" {}
 variable "owner" {}
@@ -20,7 +19,6 @@ resource "aws_s3_bucket" "generic" {
     appfamily   = "${var.appfamily}"
     owner       = "${var.owner}"
     appid       = "${var.appid}"
-    customerid  = "${var.customerid}"
     terraform   = "True"
   }
 }
