@@ -1,5 +1,4 @@
 variable "name" {}
-variable "bucketname" {}
 variable "environment" {}
 variable "foundation" {}
 variable "costcenter" {}
