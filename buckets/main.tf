@@ -19,7 +19,6 @@ resource "aws_s3_bucket" "generic" {
     costcenter  = "${var.costcenter}"
     appfamily   = "${var.appfamily}"
     owner       = "${var.owner}"
-    customerid  = "${var.customerid}"
     appid       = "${var.appid}"
     terraform   = "True"
   }
