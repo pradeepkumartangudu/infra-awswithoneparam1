@@ -5,6 +5,7 @@ variable "costcenter" {}
 variable "customerid" {}
 variable "appfamily" {}
 variable "platform" {}
+variable "customerid" {}
 variable "owner" {}
 variable "aws_region" {}
 variable "kms_key_id" {}
@@ -20,6 +21,7 @@ resource "aws_s3_bucket" "generic" {
     appfamily   = "${var.appfamily}"
     owner       = "${var.owner}"
     appid       = "${var.appid}"
+    customerid  = "${var.customerid}"
     terraform   = "True"
   }
 }
