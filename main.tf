@@ -2,7 +2,6 @@ variable "bucketname" {}
 variable "environment" {}
 variable "foundation" {}
 variable "costcenter" {}
-variable "customerid" {}
 variable "appfamily" {}
 variable "platform" {}
 variable "owner" {}
@@ -16,7 +15,6 @@ module "bucket" {
   environment = "${var.environment}"
   foundation  = "${var.foundation}"
   costcenter  = "${var.costcenter}"
-  customerid  = "${var.customerid}"
   appid       = ""
   appfamily   = "${var.appfamily}"
   platform    = "${var.platform}"
